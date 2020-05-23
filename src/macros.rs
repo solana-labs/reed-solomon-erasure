@@ -2,8 +2,8 @@
 ///
 /// # Example
 /// ```rust
-/// # #[macro_use] extern crate reed_solomon_erasure;
-/// # use reed_solomon_erasure::*;
+/// # #[macro_use] extern crate solana_reed_solomon_erasure;
+/// # use solana_reed_solomon_erasure::*;
 /// # fn main () {
 /// let shards: Vec<Vec<u8>> = shards!([1, 2, 3],
 ///                                    [4, 5, 6]);
@@ -23,7 +23,7 @@ macro_rules! shards {
 /// # Examples
 /// ## Byte arrays on stack to `Vec<&[u8]>`
 /// ```rust
-/// # #[macro_use] extern crate reed_solomon_erasure;
+/// # #[macro_use] extern crate solana_reed_solomon_erasure;
 /// # fn main () {
 /// let array: [[u8; 3]; 2] = [[1, 2, 3],
 ///                             [4, 5, 6]];
@@ -34,7 +34,7 @@ macro_rules! shards {
 /// ```
 /// ## Byte arrays on stack to `Vec<&mut [u8]>` (borrow mutably)
 /// ```rust
-/// # #[macro_use] extern crate reed_solomon_erasure;
+/// # #[macro_use] extern crate solana_reed_solomon_erasure;
 /// # fn main () {
 /// let mut array: [[u8; 3]; 2] = [[1, 2, 3],
 ///                                [4, 5, 6]];
@@ -45,7 +45,7 @@ macro_rules! shards {
 /// ```
 /// ## Byte arrays on stack to `SmallVec<[&mut [u8]; 32]>` (borrow mutably)
 /// ```rust
-/// # #[macro_use] extern crate reed_solomon_erasure;
+/// # #[macro_use] extern crate solana_reed_solomon_erasure;
 /// # extern crate smallvec;
 /// # use smallvec::SmallVec;
 /// # fn main () {
@@ -59,7 +59,7 @@ macro_rules! shards {
 /// ```
 /// ## Shard array to `SmallVec<[&mut [u8]; 32]>` (borrow mutably)
 /// ```rust
-/// # #[macro_use] extern crate reed_solomon_erasure;
+/// # #[macro_use] extern crate solana_reed_solomon_erasure;
 /// # extern crate smallvec;
 /// # use smallvec::SmallVec;
 /// # fn main () {
@@ -73,7 +73,7 @@ macro_rules! shards {
 /// ```
 /// ## Shard array to `Vec<&mut [u8]>` (borrow mutably) into `SmallVec<[&mut [u8]; 32]>` (move)
 /// ```rust
-/// # #[macro_use] extern crate reed_solomon_erasure;
+/// # #[macro_use] extern crate solana_reed_solomon_erasure;
 /// # extern crate smallvec;
 /// # use smallvec::SmallVec;
 /// # fn main () {

@@ -53,10 +53,10 @@ use super::ReconstructShard;
 /// # Example
 ///
 /// ```
-/// # #[macro_use] extern crate reed_solomon_erasure;
-/// # use reed_solomon_erasure::*;
+/// # #[macro_use] extern crate solana_reed_solomon_erasure;
+/// # use solana_reed_solomon_erasure::*;
 /// # fn main () {
-/// use reed_solomon_erasure::galois_8::Field;
+/// use solana_reed_solomon_erasure::galois_8::Field;
 /// let r: ReedSolomon<Field> = ReedSolomon::new(3, 2).unwrap();
 ///
 /// let mut sbs = ShardByShard::new(&r);
